@@ -12,16 +12,16 @@ BOTON.addEventListener("click", () => {
         //holliday    
             let flujo = holliday(DATO);
             let mantenimiento = (flujo * 1.5).toFixed(2);
-            FLUJO.innerHTML = flujo + " cc";
-            MAN.innerHTML = "m+m/2 " + mantenimiento + " cc/hr";
+            FLUJO.innerHTML = "Volumen diario: " + flujo + " cc";
+            MAN.innerHTML = "m+m/2: " + mantenimiento + " cc/hr";
             FLUJO.style.display = "block";
             MAN.style.display = "block";
         } else {
         //superficie corporal 
             let flujo = supCorporal(DATO);
             let mantenimiento = (flujo * 1.5).toFixed(2);
-            FLUJO.innerHTML = supCorporal(DATO) + " cc";
-            MAN.innerHTML = "m+m/2 " + mantenimiento + " cc/hr";
+            FLUJO.innerHTML = "Volumen diario: " + supCorporal(DATO) + " cc";
+            MAN.innerHTML = "m+m/2: " + mantenimiento + " cc/hr";
             FLUJO.style.display = "block";
             MAN.style.display = "block";
         }
