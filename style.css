@@ -86,9 +86,11 @@ button:active {
 }
 
 .resultado{
-    color: #0A81D1;
+    color: rgb(216, 24, 63);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 5px;
     display: none;
+    border: #F6F5F7;
+    box-shadow:#3E363F;
 }
