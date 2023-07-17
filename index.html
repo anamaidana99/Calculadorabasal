@@ -25,14 +25,33 @@
             </div>
             <div id="contender">  
                 <div class="contenido"> 
-                    <h1>¿Cómo se calcula?</h1>
-                    <ul id="lista">
-                        <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
-                        <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
-                        <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
+                    <h1>¿Cómo se calcula el Volumen diario?</h1>
+                        <dl id="dropd">
+                            <dt onClick="triggercontent(this);">
+                                Cuando el niño tiene hasta 30kg: Se utiliza el cálculo de Holliday-Segar.
+                            </dt>
+                            <dd>
+                                <ul class="lista">
+                                    <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
+                                    <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
+                                    <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
+                                </ul>
+                            </dd>
+                            <dt onClick="triggercontent(this);">
+                                Cuando el niño pesa más de 30kg, se utiliza el cálculo de Superficie Corporal.
+                            </dt>
+                            <dd>
+                                <ul class="lista">
+                                    <li>Superficie corporal = ( (peso * 4) + 7) / (peso + 90).</li>
+                                </ul>
+                               </dd>
+                        </dl>
+                </div>
+                </body>
                     </ul>
                 </div>
             </div>
         </div>
     </body>
 </html>
+

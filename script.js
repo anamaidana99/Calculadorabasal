@@ -49,6 +49,35 @@ function supCorporal(peso){
     return flujo.toFixed(2);
 }
 
+//contender
+//var open_dd = false;	
+function triggercontent(element) {
+    //alert("lauf " +open_dd);
+    var element_dd = element.nextElementSibling;
+    
+    while(element_dd && element_dd.tagName == "DD") {
+    
+    if ((element_dd.style.display == 'none') || ! element_dd.style.display)
+    element_dd.style.display = 'block';
+    else
+    element_dd.style.display = 'none';
+    
+    //alert(element_dd);
+    element_dd = element_dd.nextElementSibling;
+    }
+
+    /*open_dd = true;
+    
+    while(element_dd && element_dd.tagName == "DD" && open_dd == true) {
+    
+    if (element_dd.style.display = "block")
+    element_dd.style.display = "none";
+    
+    element_dd = element_dd.nextElementSibling;
+    }
+    open_dd = false;*/
+    
+}
 
 
 
