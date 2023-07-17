@@ -11,7 +11,7 @@ BOTON.addEventListener("click", () => {
         if (DATO <= 30){
         //holliday    
             let flujo = holliday(DATO);
-            let mantenimiento = (flujo * 1.5).toFixed(2);
+            let mantenimiento = ((flujo/24) * 1.5).toFixed(2);
             FLUJO.innerHTML = "Volumen diario: " + flujo + " cc";
             MAN.innerHTML = "m+m/2: " + mantenimiento + " cc/hr";
             FLUJO.style.display = "block";
@@ -19,7 +19,7 @@ BOTON.addEventListener("click", () => {
         } else {
         //superficie corporal 
             let flujo = supCorporal(DATO);
-            let mantenimiento = (flujo * 1.5).toFixed(2);
+            let mantenimiento = ((flujo/24) * 1.5).toFixed(2);
             FLUJO.innerHTML = "Volumen diario: " + supCorporal(DATO) + " cc";
             MAN.innerHTML = "m+m/2: " + mantenimiento + " cc/hr";
             FLUJO.style.display = "block";
@@ -35,7 +35,7 @@ BOTON.addEventListener("click", () => {
 function holliday(peso){
 let flujo = 0;
 if (peso <= 10){
-    flujo = peso*1000;
+    flujo = peso*100;
 } else if (peso > 10 && peso <= 20){
     flujo = (1000 + (peso - 10) * 50);
 } else if (peso > 20){
